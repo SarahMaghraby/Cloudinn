@@ -1,6 +1,18 @@
-# Client
+# Angular 4 App
+
+This is a sample application that contains:
+* Service Integration.
+* Filtering.
+* Drag and Drop.
+
+# Angular App
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.10.
+
+# Setup
+
+* git clone https://github.com/SarahMaghraby/Cloudinn.git
+* Run `npm install` to install all packages.
 
 ## Development server
 
