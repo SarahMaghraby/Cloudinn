@@ -1,0 +1,23 @@
+<form>
+  <input type="text" class="searchName" [(ngModel)]="nameFilter" name="nameFilter" placeholder="Search by name">
+</form>
+<div class="body">
+  <div class="container">
+    <div *ngIf="list">
+      <div class="row" dnd-sortable-container [sortableData]="list.results">
+        <div *ngFor="let item of list.results | filter: nameFilter; let i = index" class="card" 
+            [class.completed]="list.results.complete" dnd-sortable [sortableIndex]="i"
+            [ngClass]="{'active': !item.deactivated}" (click)="toggleActive()">
+          <div class="card-body">
+            <h5 class="card-title">
+                <span class="handle" dnd-sortable-handle>=</span>
+                {{item.name}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{item.height}}</h6>
+            <p class="card-text">{{item.homeworld}}</p>
+            <a href="#" class="card-link">{{item.url}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

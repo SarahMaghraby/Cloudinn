@@ -1,0 +1,31 @@
+.body{
+    background-color: #202124;
+}
+
+.card{
+    margin: 25px 10px 10px;
+    box-shadow: 5px 10px 18px #585d67;
+}
+
+.card-body{
+    height: 200px;
+    cursor: default;
+}
+
+form{
+    color: white;
+    margin-left: 1000px;
+}
+
+.searchName{
+    position: absolute;
+    top: 19px;
+    left: 1285px;
+    border-radius: 5px;
+    padding: 17px;
+    height: 25px;;
+}
+
+.handle{
+    cursor: move;
+}
